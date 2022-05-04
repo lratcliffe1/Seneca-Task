@@ -1,0 +1,52 @@
+.Toggle {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	border: 1px solid #fbfbfb;
+	border-radius: 30px;
+	align-items: center;
+	margin-top: 10px;
+	overflow: hidden;
+	mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); /* this fixes the overflow:hidden in Chrome/Opera */
+}
+
+.Toggle__flipped {
+	flex-direction: column;
+}
+
+.Toggle__option-container {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.Toggle__option-container-locked {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+}
+
+.Toggle__option {
+	z-index: 1;
+	margin: 0;
+	padding: 1em;
+	font-weight: bold;
+	width: 95%;
+	text-align: center;
+}
+
+.Toogle__background {
+	position: absolute;
+	background-color: white;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.Toogle__background-hide {
+	position: absolute;
+	background-color: white;
+	pointer-events: none;
+	opacity: 0;
+}
